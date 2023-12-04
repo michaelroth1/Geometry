@@ -8,16 +8,16 @@ namespace Geometry
 {
     public class Circle : Shape
     {
-        public Circle(double radius)
+        public Circle(double r)
         {
-            this.Radius = radius;
+            this.R = r;
         }
 
-        public double Radius { get; set; }
+        public double R { get; set; }
 
         public override double GetArea()
         {
-            return Math.PI * Math.Pow(this.Radius, 2);
+            return Math.PI * Math.Pow(this.R, 2);
         }
     }
 }

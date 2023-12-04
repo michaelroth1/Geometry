@@ -2,19 +2,19 @@
 {
     public class Rectangle : Shape
     {
-        public Rectangle(double width, double height)
+        public Rectangle(double x, double y)
         {
-            Width = width;
-            Height = height;
+            X = x;
+            Y = y;
         }
 
-        public double Width { get; set; }
+        public double X { get; set; }
 
-        public double Height { get; set; }
+        public double Y { get; set; }
 
         public override double GetArea()
         {
-            return Width * Height;
+            return X * Y;
         }
     }
 }
